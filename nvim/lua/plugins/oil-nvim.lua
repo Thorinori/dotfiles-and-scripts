@@ -8,6 +8,12 @@ return {
             mappings = {
                 ["<Leader>O"] = {"<Cmd>Oil<CR>", desc = "Open folder in Oil"},
             },
+            view_options = {
+		        show_hidden = true,
+		        is_always_hidden = function(name, _) return name == '..' or name == '.git' end,
+		        natural_order = true,
+	        },
+	        experimental_watch_for_changes = true,
         },
     }
 }
