@@ -9,6 +9,7 @@ return {
   "AstroNvim/astrocommunity",
   -- { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.file-explorer.oil-nvim"},
-  { import = "astrocommunity.keybinding.nvcheatsheet-nvim"}
+  { import = "astrocommunity.keybinding.nvcheatsheet-nvim"},
+  { import = "astrocommunity.workflow.hardtime-nvim"},
   -- import/override with your plugins folder
 }
