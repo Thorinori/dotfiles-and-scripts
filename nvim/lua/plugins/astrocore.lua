@@ -5,6 +5,22 @@
 -- NOTE: We highly recommend setting up the Lua Language Server (`:LspInstall lua_ls`)
 --       as this provides autocomplete and documentation while editing
 
+-- Courtesy of https://github.com/Axlefublr/dotfiles/blob/main/astro/lua/plugins/astrocore.lua
+local function copy_full_path()
+	local full_path = vim.api.nvim_buf_get_name(0)
+	local home = os.getenv('HOME')
+	if not home then return end
+	local friendly_path = string.gsub(full_path, home, '~')
+	vim.fn.setreg('+', friendly_path)
+	print('full path: ' .. friendly_path)
+end
+
+local function copy_file_name()
+	local file_name = vim.fn.expand('%:t')
+	vim.fn.setreg('+', file_name)
+	print('name: ' .. file_name)
+end
+
 ---@type LazySpec
 return {
   "AstroNvim/astrocore",
@@ -73,12 +89,22 @@ return {
         -- tables with just a `desc` key will be registered with which-key if it's installed
         -- this is useful for naming menus
         ["<Leader>b"] = { desc = "Buffers" },
+        ['<Leader>dq'] = { copy_full_path },
+	      ['<Leader>dw'] = { copy_file_name },
         -- quick save
         -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
       },
       t = {
         -- setting a mapping to false will disable it
         -- ["<esc>"] = false,
+      },
+    },
+    autocmds = {
+      everthing = {
+        {
+				  event = 'CursorMoved',
+				  command = 'normal! zz',
+			  },
       },
     },
   },
