@@ -37,8 +37,8 @@ return {
     },
     -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
     diagnostics = {
-      virtual_text = true,
-      underline = true,
+      virtual_text = false,
+      underline = false,
     },
     -- vim options can be configured here
     options = {
