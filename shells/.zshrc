@@ -86,6 +86,7 @@ ssh-add -q ~/.ssh/github
 
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias sudo="sudo -Es"
+alias ssh="kitten ssh"
 
 LS_COLORS=$LS_COLORS:'di=1;34:ln=35:so=32:pi=33:ex=1;32;1;40:bd=37:cd=37:su=30:sg=30:tw=1;36:ow=30;43'; export LS_COLORS
 
