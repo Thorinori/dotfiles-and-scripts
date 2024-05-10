@@ -33,7 +33,7 @@ set $mod Mod4
 #####################
 
 # default i3 tiling mode:
-workspace_layout default
+# workspace_layout default
 
 # i3 stacking layout:
 # Each window will be fullscreen and tabbed top to bottom.
@@ -41,7 +41,7 @@ workspace_layout default
 
 # i3 tabbed layout:
 # Each new window will open fullscreen as a tab (left to right)
-#workspace_layout tabbed
+workspace_layout tabbed
 
 ##############################
 # extra options for windows: #
