@@ -18,6 +18,8 @@ return {
         MsgSeparator = {bg = 'none'},
         DiagnosticVirtualTextError = {bg = 'none', fg='#e0af68'},
         DiagnosticVirtualTextWarn  = {bg = 'none',fg='#db4b4b'},
+        DiagnosticVirtualTextHint = {bg = 'none', fg='#1abc9c'},
+
         -- Normal = { bg = "#000000" },
       },
       astrotheme = { -- a table of overrides/changes when applying the astrotheme theme

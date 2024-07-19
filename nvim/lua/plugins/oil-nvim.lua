@@ -14,7 +14,7 @@ return {
 		        natural_order = true,
 	        },
             win_options = {
-                        signcolumn = "yes:2",
+                signcolumn = "yes:2",
             },
 	        experimental_watch_for_changes = true,
         },
