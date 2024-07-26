@@ -467,6 +467,7 @@ for_window [class="Pamac-manager"] floating enable
 for_window [window_role="About"] floating enable
 for_window [class="d2launcher"] floating enable
 for_window [class="d2stats.exe"] floating enable
+for_window [class="com-mercury-platform-AppMain"] floating enable
 
 # set border of floating window
 for_window [class="urxvt"] border pixel 1
