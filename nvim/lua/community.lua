@@ -10,6 +10,7 @@ return {
   -- { import = "astrocommunity.pack.lua" },
   { import = 'astrocommunity.diagnostics.lsp_lines-nvim'},
   { import = 'astrocommunity.pack.gleam'},
+  { import = 'astrocommunity.editing-support.undotree'},
   { import = 'astrocommunity.file-explorer.oil-nvim'},
   { import = 'astrocommunity.keybinding.nvcheatsheet-nvim'},
   { import = 'astrocommunity.workflow.hardtime-nvim'},
