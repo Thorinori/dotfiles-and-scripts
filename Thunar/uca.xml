@@ -12,4 +12,15 @@
 	<startup-notify/>
 	<directories/>
 </action>
+<action>
+	<icon>neovim</icon>
+	<name>Open with Nvim</name>
+	<submenu></submenu>
+	<unique-id>1737339518208240-1</unique-id>
+	<command>kitty sh -c &quot;nvim %F&quot;</command>
+	<description></description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<text-files/>
+</action>
 </actions>
