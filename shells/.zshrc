@@ -89,8 +89,12 @@ alias sudo="sudo -Es"
 alias ssh="kitten ssh"
 alias no_sleep="sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target"
 alias yes_sleep="sudo systemctl unmask sleep.target suspend.target hibernate.target hybrid-sleep.target"
+alias check_diskuse="sudo du -h --exclude='HDD/*' ~/* | sort -hr > files.txt"
 
 LS_COLORS=$LS_COLORS:'di=1;34:ln=35:so=32:pi=33:ex=1;32;1;40:bd=37:cd=37:su=30:sg=30:tw=1;36:ow=30;43'; export LS_COLORS
+PROTON_MEDIA_USE_GST=1
+
+MESA_SHADER_CACHE_MAX_SIZE=64G
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
