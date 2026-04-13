@@ -76,6 +76,11 @@ plugins=(
 	copypath
 	dirhistory
 	history
+	wd
+	colored-man-pages
+	fzf
+	tmux
+	tmuxinator
 )
 
 source $ZSH/oh-my-zsh.sh
