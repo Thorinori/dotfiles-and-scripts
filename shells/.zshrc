@@ -87,7 +87,6 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 eval `ssh-agent` > /dev/null
-ssh-add -q ~/.ssh/github 
 
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias sudo="sudo -Es"
